@@ -1,0 +1,125 @@
+Beneficiary ka CNIC, naam, phone number, aur address collect karna.
+Data ko database me save karna.
+Token generate karna:
+Token ko unique ID ke sath beneficiary aur department se link karna.
+Print karna ya SMS ke zariye send karna.
+
+
+Core Features (App ki khasiyat):
+1. User Management:
+Role-Based Access:
+Admin: Full permissions.
+Receptionist: Registration aur token assignment tak limited access.
+Department Staff: Status view aur update karne tak limited access.
+Admin users ko add/edit/delete kar sakta hai aur roles assign kar sakta hai.
+2. Token System:
+Unique Token Generation: Har token unique hota hai aur beneficiary ke request aur department se linked hota hai.
+Token Scanning: Staff token scan karke instantly beneficiary ke details dekh sakta hai.
+3. Dashboard:
+Metrics:
+Daily visitor count.
+New vs. returning beneficiaries.
+Department-wise activity.
+Visualizations:
+Bar charts daily activity ke liye.
+Pie charts department contributions ke liye.
+4. Search Functionality:
+CNIC, phone number, aur name ke zariye search karna.
+Instant results with precise data.
+5. History Tracking:
+Comprehensive Logs:
+Har interaction timestamp ke saath record hoti hai.
+Purpose, visited departments aur status ka detail.
+Easy Access: Audit aur reporting ke liye searchable history.
+
+
+
+
+Beneficiary Management App Documentation
+
+Overview
+Ye app Saylani Welfare ko beneficiaries ka data efficiently manage aur track karne ke liye design ki gayi hai. Ye CNIC-based system ensure karta hai ke beneficiaries ka data departments ke darmiyan record, track aur update kiya ja sake aur users ke liye smooth management ho.
+
+Stakeholders (Users)
+Admin:
+
+System ka full access.
+Users, departments aur reports manage karte hain.
+Dashboard metrics aur system settings configure karte hain.
+Reports generate karte hain for operational insights.
+Receptionist:
+
+Beneficiaries ka registration karta hai.
+CNIC, name, contact details, address aur purpose collect karta hai.
+Token assign karta hai based on department aur purpose.
+Initial data entry aur verification karta hai.
+Department Staff:
+
+Token scan karta hai aur beneficiary ka detail data dekh sakta hai.
+Assistance status update karta hai (e.g., In Progress, Completed).
+Remarks ya actions taken system me note karta hai.
+Beneficiary (Seeker):
+
+Apna CNIC aur visit ka purpose deta hai.
+Token use karke relevant department me jata hai.
+Apne request ka status update receive karta hai.
+User Flow (Process)
+1. Reception pe Registration:
+Arrival: Beneficiary reception desk par aata hai.
+Information Collection: Receptionist details collect karta hai:
+CNIC (unique identifier).
+Name, phone number, address.
+Purpose of visit (e.g., financial aid ya medical assistance).
+Token Assignment: Ek unique token generate hota hai jo specific department se linked hota hai.
+Confirmation: Token ka detail print ya SMS ke zariye diya jata hai.
+2. Department Interaction:
+Token Presentation: Beneficiary apna token department me present karta hai.
+Scan and Retrieve: Staff token scan karke beneficiary ka:
+Details dekh sakta hai.
+Purpose aur history check kar sakta hai.
+Assistance Provided: Staff required help provide karta hai aur system me remarks aur updates save karta hai.
+3. Admin Dashboard:
+Daily Insights:
+Total visitors (new aur returning beneficiaries ke saath).
+Department-wise activity statistics.
+Search Records:
+CNIC, phone number, ya name se search karne ka option.
+Reports and Logs:
+Detailed logs ko audit aur tracking ke liye access kar sakte hain.
+4. Completion of Help:
+Status Update: Jab assistance complete hoti hai, system me status update hota hai.
+History Logging: Beneficiary ke CNIC ke against sari actions ka record future ke liye save hota hai.
+Core Features (App ki khasiyat):
+1. User Management:
+Role-Based Access:
+Admin: Full permissions.
+Receptionist: Registration aur token assignment tak limited access.
+Department Staff: Status view aur update karne tak limited access.
+Admin users ko add/edit/delete kar sakta hai aur roles assign kar sakta hai.
+2. Token System:
+Unique Token Generation: Har token unique hota hai aur beneficiary ke request aur department se linked hota hai.
+Token Scanning: Staff token scan karke instantly beneficiary ke details dekh sakta hai.
+3. Dashboard:
+Metrics:
+Daily visitor count.
+New vs. returning beneficiaries.
+Department-wise activity.
+Visualizations:
+Bar charts daily activity ke liye.
+Pie charts department contributions ke liye.
+4. Search Functionality:
+CNIC, phone number, aur name ke zariye search karna.
+Instant results with precise data.
+5. History Tracking:
+Comprehensive Logs:
+Har interaction timestamp ke saath record hoti hai.
+Purpose, visited departments aur status ka detail.
+Easy Access: Audit aur reporting ke liye searchable history.
+Tech Stack (Tools aur Technologies):
+Frontend: React.js (Material UI ya Tailwind CSS ke saath).
+Backend: Node.js (Express framework).
+Database: MongoDB for data storage.
+Authentication: JWT for secure role-based access.
+Deployment:
+Frontend: Vercel.
+Backend: Render ya Heroku.
